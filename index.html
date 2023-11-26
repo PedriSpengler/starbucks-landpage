@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starbucks Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/starbucks.png" type="image/x-icon">
 </head>
 <body>
     <section>
@@ -29,9 +30,9 @@
         </div>
     </div>
     <ul class="thumb">
-        <li><img src="./assets/thumb1.png" onclick="imgSlider('./assets/img1.png');chanceCircleColor('#017143')"></li>
-        <li><img src="./assets/thumb2.png" onclick="imgSlider('./assets/img2.png');changeCircleColor('#EB7495')"></li>
-        <li><img src="./assets/thumb3.png" onclick="imgSlider('./assets/img3.png');changeCircleColor('#D752B1')"></li>
+        <li><img class="img1" src="./assets/thumb1.png" ></li>
+        <li><img class="img2" src="./assets/thumb2.png" ></li>
+        <li><img class="img3" src="./assets/thumb3.png" ></li>
     </ul>
     <ul class="sci">
         <li><a href="#"><img src="./assets/facebook.png"></a></li>
@@ -39,16 +40,6 @@
         <li><a href="#"><img src="./assets/instagram.png"></a></li>
     </ul>
     </section>
-
-    <script type="text/javascript">
-        function imgSlider(anything){
-            document.querySelector('.starbucks').src = anything;
-        }
-
-        function changeCircleColor(color){
-            const circle = document.querySelector('.circle');
-            circle.style.background = color;
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
