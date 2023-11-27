@@ -11,7 +11,7 @@ section
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 100px;
+    padding: 85px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -95,6 +95,7 @@ header ul li a:hover::after{
 .content .textBox p
 {
     color: #333;
+    width: 55rem;
 }
 .content .textBox a
 {
