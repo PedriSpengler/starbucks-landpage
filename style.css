@@ -17,7 +17,7 @@ section
     align-items: center;
     background: #FFF;
 }
-header
+nav
 {
     position: absolute;
     top: 0;
@@ -28,21 +28,21 @@ header
     justify-content: space-between;
     align-items: center;
 }
-header .logo
+nav .logo
 {
     position: relative;
     max-width: 80px;
 }
-header ul
+nav ul
 {
     position: relative;
     display: flex;
 }
-header ul li
+nav ul li
 {
     list-style: none;
 }
-header ul li a
+nav ul li a
 {
     display: inline block;
     color: #333;
@@ -52,7 +52,7 @@ header ul li a
     position: relative;
 }
 
-header ul li a:after{
+nav ul li a:after{
     content: '';
     position: absolute;
     left: 0;
@@ -65,7 +65,7 @@ header ul li a:after{
     transition: transform 0.3s ease;
 }
 
-header ul li a:hover::after{
+nav ul li a:hover::after{
     transform: scaleX(1); /* Aumenta a largura da linha no hover */
     transform-origin: bottom left;
 }
@@ -195,4 +195,8 @@ header ul li a:hover::after{
     height: 100%;
     background: #017143;
     clip-path: circle(600px at right 800px);
+}
+
+@media(max-width: 768px){
+
 }
