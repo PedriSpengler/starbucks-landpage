@@ -10,7 +10,7 @@ section
 {
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    max-height: 100vh;
     padding: 85px;
     display: flex;
     justify-content: space-between;
@@ -82,7 +82,7 @@ nav ul li a:hover::after{
 .content .textBox h2
 {
     color: #333;
-    font-size: 4em;
+    font-size: 3.5em;
     line-height: 1.4em;
     font-weight: 500;
 }
@@ -95,7 +95,8 @@ nav ul li a:hover::after{
 .content .textBox p
 {
     color: #333;
-    width: 55rem;
+    width: 48rem;
+    font-size: 14px;
 }
 .content .textBox a
 {
@@ -188,7 +189,7 @@ nav ul li a:hover::after{
 
 .circle
 {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -197,6 +198,66 @@ nav ul li a:hover::after{
     clip-path: circle(600px at right 800px);
 }
 
+@media only screen and (max-width: 1270px){
+    .circle{
+        clip-path: circle(560px at right 900px);
+    }
+}
+
+@media(max-width: 1024px){
+    .circle {
+        clip-path: circle(600px at right 900px);
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .nav {
+        padding: 20px; /* Reduz o padding */
+    }
+
+    .content {
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        text-align: center; /* Centraliza o texto */
+        font-size: 12px;
+        margin-top: 7rem;
+    }
+
+    .content .textBox{
+        width: 100%; /* Ocupa toda a largura disponível */
+        padding: 0 20px; /* Adiciona um espaçamento interno */
+    }
+
+    .content .textBox p {
+        width: 100%; /* Ocupa toda a largura disponível */
+        font-size: 12px;
+    }
+
+    .content .textBox a{
+        padding: 12px 38px;
+        display: flex;
+        left: 170px;
+    }
+
+    .content .imgBox {
+        width: 100%; /* Ocupa toda a largura disponível */
+        justify-content: center; /* Centraliza a imagem */
+        padding: 0; /* Remove o padding */
+    }
+
+    .thumb,
+    .sci {
+        position: static; /* Remove o posicionamento absoluto */
+        transform: none; /* Remove a transformação */
+        justify-content: center; /* Centraliza os itens */
+        margin-top: 20px; /* Adiciona espaçamento superior */
+    }
+}
 @media(max-width: 768px){
+
+}
+
+@media(max-width: 425px){
 
 }
